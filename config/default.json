@@ -1,0 +1,5 @@
+{
+    "dbURI": "mongodb://127.0.0.1:27017/MernECommerce",
+    "jwtsecret": "dummySecret",
+    "StripeAPIKey": "YOUR STRIPE SECRET API KEY"
+}
