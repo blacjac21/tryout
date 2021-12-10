@@ -37,6 +37,7 @@ class Home extends Component {
             <Carousel />
             
             <Container>
+                <br/>
             <h3 className="heading"> Products </h3>
                 <div className="row">
                 {items.length ? items.map((item)=>(
@@ -63,6 +64,7 @@ class Home extends Component {
                 )): <div style={{width:"100%"}}><Alert className="text-center">No products found. </Alert></div>}
                  </div>
             </Container>
+            <br/>
             <Footer />
             </div>
         )
