@@ -43,6 +43,7 @@ class Cart extends Component {
         return(
             <div>
                 <AppNavbar/>
+                <br/> <br/> <br/> <br/>
                 {this.props.isAuthenticated ?
                     <Fragment>
                         {this.props.cart.cart ? null :

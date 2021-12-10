@@ -34,6 +34,7 @@ class Home extends Component {
         return (
             <div>
             <AppNavbar/>
+            <br/> <br/> 
             <Carousel />
             
             <Container>
