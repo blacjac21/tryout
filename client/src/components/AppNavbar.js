@@ -14,6 +14,8 @@ import Logout from './auth/Logout';
 import LoginModal from './auth/loginModal';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import companyLogo from "../assets/logo.png";
+import "../css/navbar.css"
 
 class AppNavbar extends Component {
     state = {
@@ -69,8 +71,11 @@ class AppNavbar extends Component {
         return(
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
+                <div className="logo">
+                <img src={companyLogo} alt="logo"></img>
+            </div>
                     <Container>
-                        <NavbarBrand href="/">E Commerce Store</NavbarBrand>
+                        <NavbarBrand href="/">Filcon Sales and Service</NavbarBrand>
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar> 
@@ -78,6 +83,7 @@ class AppNavbar extends Component {
                             </Nav>
                         </Collapse>
                     </Container>
+                  
                 </Navbar>
             </div>
         );

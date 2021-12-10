@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getItems } from '../actions/itemActions';
 import { addToCart } from '../actions/cartActions';
+import Carousel from '../js/Carousel';
+import "../css/Home.css"
+import Footer from '../js/Footer';
 
 class Home extends Component {
 
@@ -31,12 +34,19 @@ class Home extends Component {
         return (
             <div>
             <AppNavbar/>
+            <Carousel />
+            
             <Container>
+            <h3 className="heading"> Products </h3>
                 <div className="row">
                 {items.length ? items.map((item)=>(
                     <div className="col-md-4">
+
+                    
+                    <br/> <br/> <br/> <br/>    
                     <Card className="mb-4">
                         <CardBody>
+                            
                             <CardTitle tag="h5">{item.title}</CardTitle>
                             <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>
                             <CardText>{item.category}</CardText>
@@ -53,6 +63,7 @@ class Home extends Component {
                 )): <div style={{width:"100%"}}><Alert className="text-center">No products found. </Alert></div>}
                  </div>
             </Container>
+            <Footer />
             </div>
         )
     }

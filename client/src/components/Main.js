@@ -5,11 +5,15 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Cart from './Cart';
 import Orders from './Order';
+import Header from '../js/Header';
+
 
 class Main extends Component {
     render(){
         return (
+            
             <div>
+                
                 <Switch>
                     <Route path='/home'>
                         <Home/>
