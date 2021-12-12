@@ -1,20 +1,18 @@
 import React from 'react';
 import "../css/Products.css"
+import Footer from '../js/Footer';
+import Header from '../js/Header';
+import Carousel from '../js/Carousel';
+import AppNavbar from '../components/AppNavbar';
 
 function Products() {
     return(
-    <div class="app">
-       <h1 className="heading">Products</h1>
-       
-       <ul class="hs full">
-         <li class="item">test</li>
-        
-       </ul>
-       
-       
-       
-       </div>
-     
+            <div>
+              <AppNavbar/>
+              <br/> <br/> 
+              <Carousel />
+              <Footer />
+            </div>
      
      
     );

@@ -46,10 +46,7 @@ function Footer(){
 
 			<div class="footer-right">
 
-				<p class="footer-company-about">
-					<span>About the company</span>
-				Industrial consultant in Bengaluru,Karnataka. It is known to provide top service in the following categories: Air Filter Manufacturers, Filter Bag Manufacturers, Non Woven Filter Fabric Manufacturers, Non Woven Filter Bag Manufacturers, Fabric Non Woven Spun Bonded Manufacturers, Filter Manufacturers, Filter Media Dealers, Filter Cloth Manufacturers
-				</p>
+				
 
 				
 

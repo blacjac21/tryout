@@ -8,7 +8,6 @@ import { addToCart } from '../actions/cartActions';
 import Carousel from '../js/Carousel';
 import "../css/Home.css"
 import Footer from '../js/Footer';
-import Header from '../js/Header';
 
 class Home extends Component {
 
@@ -35,12 +34,8 @@ class Home extends Component {
         return (
             <div>
             <AppNavbar/>
-            
-            <br/> <br/> 
-            <Carousel />
-            
-          
-            <Container>
+            <br/>  <br/> <br/>
+           <Container>
                 <br/>
             <h3 className="heading"> Products </h3>
                 <div className="row">
@@ -68,8 +63,9 @@ class Home extends Component {
                 )): <div style={{width:"100%"}}><Alert className="text-center">No products found. </Alert></div>}
                  </div>
             </Container>
-            <br/>
-            <Footer />
+            
+            <br/> <br/>
+            <Footer/>
             </div>
         )
     }

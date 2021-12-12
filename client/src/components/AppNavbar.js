@@ -8,6 +8,12 @@ import {
     NavItem, 
     Container, 
     NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    LinkContainer,
+    DropdownItem,
+    Button,
 } from 'reactstrap';
 import RegisterModal from './auth/registerModal';
 import Logout from './auth/Logout';
@@ -43,8 +49,12 @@ class AppNavbar extends Component {
                         <strong>{ user ? `Welcome ${user.name}` : ''}</strong>
                     </span>
                 </NavItem>
+               
                 <NavItem>
                     <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/cc">Products</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/cart">Cart</NavLink>
@@ -61,6 +71,15 @@ class AppNavbar extends Component {
 
         const guestLinks = (
             <Fragment>
+                <NavItem>
+                    <NavLink href="/">Home</NavLink>
+                </NavItem>
+                
+                
+                <NavItem>
+                    <NavLink href="/cc">Products</NavLink>
+                </NavItem>
+                
                 <NavItem>
                     <RegisterModal/>
                 </NavItem>
@@ -92,6 +111,10 @@ class AppNavbar extends Component {
                                 { isAuthenticated ? authLinks: guestLinks}                               
                             </Nav>
                         </Collapse>
+
+    
+ 
+
                     </Container>
                     
                     

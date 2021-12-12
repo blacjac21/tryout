@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import Cart from './Cart';
 import Orders from './Order';
 import Header from '../js/Header';
+import Products from '../js/Products';
 
 
 class Main extends Component {
@@ -15,9 +16,12 @@ class Main extends Component {
             <div>
                 
                 <Switch>
-                    <Route path='/home'>
+                    <Route path='/cc'>
                         <Home/>
                     </Route>
+                    <Route path="/home">
+                        <Products />
+                     </Route>
                     <Route path='/addItem'>
                         <AddItem/>
                     </Route>
