@@ -16,6 +16,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import companyLogo from "../assets/logo.png";
 import "../css/navbar.css"
+import Header from '../js/Header';
 
 class AppNavbar extends Component {
     state = {
@@ -54,6 +55,7 @@ class AppNavbar extends Component {
                 <NavItem>
                     <Logout/>
                 </NavItem>
+                
             </Fragment>
         );
 
@@ -65,17 +67,25 @@ class AppNavbar extends Component {
                 <NavItem>
                     <LoginModal/>
                 </NavItem>
+           
+               
+                
+                
             </Fragment>
+            
         );
 
         return(
             <div>
-                <Navbar color="dark" dark expand="sm" className="mb-5" fixed="top">
+               
+                <Navbar color="#202020" dark expand="sm" className="mb-5" fixed="top">
                 <div className="logo">
                 <img src={companyLogo} alt="logo"></img>
-            </div>
+                
+                </div>
                     <Container>
                         <NavbarBrand href="/">Filcon Sales and Service</NavbarBrand>
+                        
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar> 
@@ -83,9 +93,18 @@ class AppNavbar extends Component {
                             </Nav>
                         </Collapse>
                     </Container>
-                  
+                    
+                    
+                   
+                    
+                   
                 </Navbar>
+               
+              
+               
+                
             </div>
+           
         );
     }
 }

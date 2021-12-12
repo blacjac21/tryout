@@ -7,7 +7,8 @@
 }
 
 nav{
-    display: flex;
+    
+    display: inline-flex;
     justify-content: space-around;
     align-items: center;
     min-height: 11vh;
@@ -36,7 +37,7 @@ nav{
 .nav_links{
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 60%;
     
 }
 

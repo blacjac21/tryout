@@ -8,6 +8,7 @@ import { addToCart } from '../actions/cartActions';
 import Carousel from '../js/Carousel';
 import "../css/Home.css"
 import Footer from '../js/Footer';
+import Header from '../js/Header';
 
 class Home extends Component {
 
@@ -34,9 +35,11 @@ class Home extends Component {
         return (
             <div>
             <AppNavbar/>
+            
             <br/> <br/> 
             <Carousel />
             
+          
             <Container>
                 <br/>
             <h3 className="heading"> Products </h3>
