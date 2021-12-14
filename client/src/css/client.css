@@ -1,0 +1,99 @@
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    position: right;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: right;
+}
+.section-title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 5px;
+    position: right;
+}
+.section-title h1::before{
+    content: '';
+    left: 0;
+    position: right;
+    height: 3px;
+    right: 32%;
+    background-color: #073347;
+    bottom: -5px;
+
+}
+.container .section-title h1::before{
+    left: 30%;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    margin-left: -100px;
+	padding: auto;
+	border-radius: 20%;
+    position: right;
+}
+.column1{
+    position: right;
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: right;
+}
+.team{
+    margin-bottom:30px ;
+}
+.team .team-img{
+    position: right;
+    font-size: 0;
+    text-align: right;
+}
+.team .team-img img{
+    width: 160px;
+    height: 180px;
+    border-radius: 100%;
+    border: 20px solid gold;
+}
+
+.team .team-content{
+    padding: 80px 10px 10px 0px;
+    margin-top: -80px;
+    text-align: right;
+    background: red;
+    border-radius: 10px;
+}
+.team .team-content h2{
+font-size: 25px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+.team .team-content h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.team .team-content h4{
+    font-size: 16px;
+font-weight: 300;
+letter-spacing: 1px;
+font-style: italic;
+margin-bottom: 0;
+}
+.team .team-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+

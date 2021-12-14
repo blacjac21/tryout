@@ -7,6 +7,8 @@ import Cart from './Cart';
 import Orders from './Order';
 import Header from '../js/Header';
 import Products from '../js/Products';
+import Client from '../js/Client'
+import contactUs from '../js/contactus';
 
 
 class Main extends Component {
@@ -31,6 +33,13 @@ class Main extends Component {
                     <Route path='/orders'>
                         <Orders/>
                     </Route>
+                    <Route path='/client'>
+                        <Client/>
+                        </Route>
+                    <Route path='/contactUs'>
+                        <contactUs/>
+                        </Route>
+                
                     <Redirect to='/home'/>
                 </Switch>
             </div>

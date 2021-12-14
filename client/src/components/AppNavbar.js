@@ -99,7 +99,7 @@ class AppNavbar extends Component {
                
                 <Navbar color="#202020" dark expand="sm" className="mb-5" fixed="top">
                 <div className="logo">
-                <img src={companyLogo} alt="logo"></img>
+                <img src={companyLogo} alt="logo" ></img>
                 
                 </div>
                     <Container>

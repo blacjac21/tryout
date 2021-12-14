@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Footer.css"
+import { Link } from "react-router-dom";
 
 function Footer(){
   return(
@@ -7,18 +8,19 @@ function Footer(){
 
 			<div class="footer-left">
 
-				<h3>Filcon Sales and Services</h3>
+				<h3 class="pesu" >Filcon Sales and Services</h3>
 
 				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+					<a href="/home" class="link-1">Home</a>
 					
-					<a href="#">About us</a>
+					<a href="/home">About us</a>
 				
-					<a href="#">Contact</a>
+					<a href="/contactUs">Contact</a>
 				
-					<a href="#">Products</a>
+					<a href="/cc">Products</a>
 					
-					<a href="#">Faq</a>
+					<a href="/client">Client</a>
+					
 					
 				</p>
 
@@ -39,7 +41,7 @@ function Footer(){
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@filcon.com</a></p>
+					<p><a href="mailto:filcon.m@gmail.com">filcon.m@gmail.com</a></p>
 				</div>
 
 			</div>

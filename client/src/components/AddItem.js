@@ -12,6 +12,7 @@ import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 import AppNavbar from './AppNavbar';
+import "../css/forms.css"
 
 class AddItem extends Component {
     state = {
@@ -51,10 +52,10 @@ class AddItem extends Component {
                 <Container>
                     <h2 className="text-center mb-3">Add a new Item</h2>
                     { this.props.isAuthenticated ?
-                    <Form onSubmit={this.onSubmit}>
-                        <FormGroup>
+                    <Form onSubmit={this.onSubmit} className="forms">
+                        <FormGroup >
                             <Label for="title">Title</Label>
-                            <Input
+                            <Input required
                                 type="text"
                                 name="title"
                                 id="title"
@@ -63,7 +64,7 @@ class AddItem extends Component {
                             />
                             <br/>
                             <Label for="description">Description</Label>
-                            <Input
+                            <Input required
                                 type="text"
                                 name="description"
                                 id="description"
@@ -72,7 +73,7 @@ class AddItem extends Component {
                             />
                             <br/>
                             <Label for="category">Category</Label>
-                            <Input 
+                            <Input  required
                                 type="text"
                                 name="category" 
                                 id="category"
@@ -82,7 +83,7 @@ class AddItem extends Component {
                             </Input>
                             <br/>
                             <Label for="price">Price</Label>
-                            <Input
+                            <Input required
                                 type="number"
                                 name="price"
                                 id="price"
